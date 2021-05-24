@@ -3,7 +3,10 @@ module.exports = {
   plugins: [
     [
       'babel-plugin-root-import',
-      {rootPathPrefix: '~', rootPathSuffix: 'src'},
+      {
+        rootPathPrefix: '~',
+        rootPathSuffix: 'src',
+      },
       'babel-plugin-styled-components',
     ],
   ],
