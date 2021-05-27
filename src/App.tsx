@@ -21,7 +21,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import UserContext from './Context/User';
 import MainNavi from './Screen/MainNavi';
 import LoginStackNavi from './Screen/LoginStackNavi';
-import TabNavi from './Screen/TabNavi';
 
 interface StyledProps {
   theme: ITheme;
@@ -50,8 +49,8 @@ const App = ({}: Props) => {
 
   return (
     <NavigationContainer>
-      {/* {!userInfo ? <MainNavi /> : <LoginStackNavi />} */}
-      {userInfo ? <TabNavi /> : <LoginStackNavi />}
+      {!userInfo ? <MainNavi /> : <LoginStackNavi />}
+      {/* {userInfo ? <TabNavi /> : <LoginStackNavi />} */}
       {/* <SafeAreaView>
         <ThemeProvider theme={Theme}>
           <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
